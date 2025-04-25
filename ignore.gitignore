@@ -1,0 +1,10 @@
+# Ignorar el entorno virtual
+entorno/
+
+# Ignorar archivos y carpetas comunes
+__pycache__/
+*.pyc
+
+# Otros archivos temporales
+*.pdb
+*.log
