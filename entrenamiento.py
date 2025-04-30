@@ -177,7 +177,6 @@ print(pd.crosstab(df['rango_edad'], df['diabetes'], normalize='index') * 100)
 # Análisis de factores de riesgo 
 print("\nFactores más correlacionados con diabetes:") 
 
-df.to_csv('datos_diabetes_colombia.csv', index=False)
 df['sexo'] = df['sexo'].map({'M': 1, 'F': 0})
 df['edad_promedio'] = df['rango_edad'].apply(convertir_rango_edad)
 df_numeric = df.select_dtypes(include=['number'])
