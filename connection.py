@@ -37,5 +37,5 @@ if __name__ == "__main__":
     for archivo_csv in carpeta.glob('*.csv'):
         baseName = ConectarBase(archivo_csv)
         print(f"Archivo: {archivo_csv.name}:")
-        baseName.imprimirHead() 
-        print()
+        baseName.imprimirHead()  # Ya no es necesario hacer print(baseName.imprimir())
+        print()  # Salto de línea para mayor legibilidad
